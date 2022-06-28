@@ -1,0 +1,16 @@
+Options -Indexes
+
+RewriteEngine on
+
+# Remove Trailing .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+RewriteRule ^create/oHrrKULq?$ /cipherri/signup.php [L]
+RewriteRule ^u/ajUKnliO?$ /cipherri/dashboard.php [L]
+RewriteRule ^u_profile/bWQaxH?$ /cipherri/profile.php [L]
+RewriteRule ^generate/y3k5k1?$ /cipherri/generatepwd.php [L]
+
+
+
